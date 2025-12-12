@@ -15,3 +15,6 @@ data = {
 
 df = pd.DataFrame(data)
 df
+kmeans = KMeans(n_clusters=3, random_state=42)
+df['Cluster'] = kmeans.fit_predict(df[['Rating', 'Penonton', 'Budget']])
+df

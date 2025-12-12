@@ -1,0 +1,17 @@
+import pandas as pd
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+
+# Dataset
+data = {
+    'Judul_Film': [
+        'Sharelock', 'Beku', 'Pelawak', 'Minion', 'Avatar',
+        'Spiderman', 'Toy Story', 'Batman', 'Lahirnya', 'Moana'
+    ],
+    'Rating': [8.2, 7.1, 6.5, 7.8, 8.5, 8.1, 7.9, 8.3, 6.8, 7.6],
+    'Penonton': [120, 98, 65, 150, 200, 180, 140, 160, 75, 130],
+    'Budget': [80, 50, 30, 60, 150, 120, 100, 110, 40, 70]
+}
+
+df = pd.DataFrame(data)
+df
